@@ -219,7 +219,7 @@ class HunyuanVideoPipeline(BasePipeline):
             self.max_text_length_image = self.args.text_len + crop_start
 
         if vae_path := self.model_config.get('vae_path', None):
-            with open('configs/hy_vae_config.json') as f:
+            with open('/content/drive/diffusion-pipe/diffusion-pipe/configs/hy_vae_config.json') as f:
                 vae_config = json.load(f)
             vae_sd = load_safetensors(vae_path)
             vae = AutoencoderKLCausal3D.from_config(vae_config)

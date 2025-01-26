@@ -6,6 +6,5 @@ num_ar_buckets = 7
 frame_buckets = [1, 33, 65]
 
 [[directory]]
-path = '/workspace/diffusion-pipe/data/input'
+path = '/content/diffusion-pipe-colab/data/input'
 num_repeats = 5
-

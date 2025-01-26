@@ -1,5 +1,5 @@
 # Output path for training runs. Each training run makes a new directory in here.
-output_dir = '/content/drive/diffusion-pipe/diffusion-pipe/data/output'
+output_dir = '/content/diffusion-pipe-colab/data/output'
 
 # Dataset config file.
 dataset = 'examples/dataset.toml'
@@ -32,10 +32,10 @@ video_clip_mode = 'single_middle'
 
 [model]
 type = 'hunyuan-video'
-transformer_path = '/content/drive/diffusion-pipe/diffusion-pipe/hunyuan_video_720_cfgdistill_bf16.safetensors'
-vae_path = '/content/drive/diffusion-pipe/diffusion-pipe/hunyuan_video_vae_bf16.safetensors'
-llm_path = '/content/drive/diffusion-pipe/diffusion-pipe/models/llava-llama-3-8b-text-encoder-tokenizer'
-clip_path = '/content/drive/diffusion-pipe/models/clip-vit-large-patch14'
+transformer_path = '/content/diffusion-pipe-colab/models/hunyuan_video_720_cfgdistill_bf16.safetensors'
+vae_path = '/content/diffusion-pipe-colab/models/hunyuan_video_vae_bf16.safetensors'
+llm_path = '/content/diffusion-pipe-colab/models/llava-llama-3-8b-text-encoder-tokenizer'
+clip_path = '/content/diffusion-pipe-colab/models/clip-vit-large-patch14'
 dtype = 'bfloat16'
 transformer_dtype = 'float8'
 timestep_sample_method = 'logit_normal'
